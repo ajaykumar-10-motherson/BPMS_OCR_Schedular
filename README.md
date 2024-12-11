@@ -1,57 +1,112 @@
-# BPMS_OCR_Schedular
-This is BPMS OCR Schedular in Spring boot.
+# BPMS OCR Scheduler
 
+This is the **BPMS OCR Scheduler**, a service built with Spring Boot.
 
-#Before running this service locally please make sure you have the required depenedency installed in your Machine.
+## Prerequisites
 
-#OCRMyPdf installation steps (Windows):
-1 Download and install python latest version (python-3.11.0a1-amd64.exe)
-	To check python version: python –version  [3.9.6]
-2 Download and install ghostscript latest version (gs9550w64.exe)
-3 Download and install tesseract-ocr latest version (tesseract-ocr-w64-setup-v5.0.0-alpha.20210506.exe)
-4 open Command Prompt (Run as administrator)
-5 Run following commands one by one 
-a)	pip install pypdfocr
-b)	pip install Pillow
-c)	pip install reportlab
-d)	pip install watchdog
-e)	pip install pypdf2
-f)	pip install matplotlib
-g)	pip install tesseract
-h)	pip install leptonica
-i)	pip install argh
-j)	pip install gtp
-k)	pip install sgf
-l)	pip install pngquant
-6 Install ocrmypdf by running command pip install ocrmypdf in command prompt
-	To check ocrmypdf version: ocrmypdf –version
-7 Copy bpo_ocr_home folder structure in C:\ drive 
-8 Open windows PowerShell
-	Run following ocrmypdf commanct to test ocr working
-ocrmypdf --force-ocr C:\bpo_ocr_home\BPO\Incoming_Files\1.pdf C:\bpo_ocr_home\BPO\Incoming_Files\1001_output.pdf
+Before running this service locally, ensure you have the required dependencies installed on your machine.
 
+---
 
+## OCRMyPdf Installation Steps
 
+### For Windows
 
+1. **Install Python (Latest Version):**
+   - Download and install Python (e.g., `python-3.11.0a1-amd64.exe`).
+   - Verify installation:  
+     ```bash
+     python --version
+     ```  
+     Example output: `3.9.6`
 
+2. **Install Ghostscript (Latest Version):**
+   - Download and install Ghostscript (e.g., `gs9550w64.exe`).
 
-#OCRMyPdf installation steps (Linux):
-1 Download and install python latest version
-	To check python version: python –version
-2 Download and install ghostscript latest version
-3 Download and install tesseract-ocr latest version
-4 Open PuTTY
-5 Run following commands one by one 
-a)	pip3 install pypdfocr
-b)	pip3 install Pillow
-c)	pip3 install reportlab
-d)	pip3 install watchdog
-e)	pip3 install pypdf2
-f)	pip3 install matplotlib
-g)	pip3 install tesseract
-h)	pip3 install leptonica
-i)	pip3 install argh
-j)	pip3 install gtp
-k)	pip3 install sgf
-l)	pip3 install pngquant
+3. **Install Tesseract-OCR (Latest Version):**
+   - Download and install Tesseract OCR (e.g., `tesseract-ocr-w64-setup-v5.0.0-alpha.20210506.exe`).
 
+4. **Install Required Python Libraries:**
+   - Open Command Prompt **(Run as Administrator)**.
+   - Run the following commands one by one:
+     ```bash
+     pip install pypdfocr
+     pip install Pillow
+     pip install reportlab
+     pip install watchdog
+     pip install pypdf2
+     pip install matplotlib
+     pip install tesseract
+     pip install leptonica
+     pip install argh
+     pip install gtp
+     pip install sgf
+     pip install pngquant
+     ```
+
+5. **Install OCRMyPdf:**
+   - Run the following command:
+     ```bash
+     pip install ocrmypdf
+     ```
+   - Verify installation:
+     ```bash
+     ocrmypdf --version
+     ```
+
+6. **Set Up Folder Structure:**
+   - Copy the `bpo_ocr_home` folder structure to the `C:\` drive.
+
+7. **Test OCR Functionality:**
+   - Open Windows PowerShell and run:
+     ```bash
+     ocrmypdf --force-ocr C:\bpo_ocr_home\BPO\Incoming_Files\1.pdf C:\bpo_ocr_home\BPO\Incoming_Files\1001_output.pdf
+     ```
+
+---
+
+### For Linux
+
+1. **Install Python (Latest Version):**
+   - Verify installation:
+     ```bash
+     python3 --version
+     ```
+
+2. **Install Ghostscript (Latest Version).**
+
+3. **Install Tesseract-OCR (Latest Version).**
+
+4. **Install Required Python Libraries:**
+   - Open your terminal or PuTTY.
+   - Run the following commands one by one:
+     ```bash
+     pip3 install pypdfocr
+     pip3 install Pillow
+     pip3 install reportlab
+     pip3 install watchdog
+     pip3 install pypdf2
+     pip3 install matplotlib
+     pip3 install tesseract
+     pip3 install leptonica
+     pip3 install argh
+     pip3 install gtp
+     pip3 install sgf
+     pip3 install pngquant
+     ```
+
+5. **Install OCRMyPdf:**
+   - Run the following command:
+     ```bash
+     pip3 install ocrmypdf
+     ```
+
+---
+
+### Notes
+- Make sure all required dependencies are installed before running the scheduler.
+- Update the folder structure as needed for your environment.
+
+---
+
+Feel free to reach out if you encounter any issues!
